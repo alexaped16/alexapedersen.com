@@ -1,0 +1,67 @@
+h4{
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+    letter-spacing: 5px;
+    line-height: 120px; 
+    color: #ba5151;
+    font-size: 140px;   
+}
+
+h3{
+    font-weight: bold;
+    letter-spacing: 0px;
+    line-height: 4px;
+    font-size: 50px;   
+}
+
+.rubix-cube{
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+    position: absolute; 
+    bottom: 0; 
+}
+
+@mixin backgroundImage($name){
+    background-size: cover;
+    background-reapeat: no-reapeat;
+    background-position: 0 0;
+    $url:"/assets/img/#{$name}";
+    background: url($url);
+}
+
+// big image as background
+.background-image-home{
+    @include backgroundImage ("spoon.jpg");
+
+    height: 100vh;
+    position: relative;
+    background-position: 100% 10%;
+    background-size: cover;  
+}
+
+.vernon{
+    margin-top: 210px;
+    margin-left: 90px;  
+}
+
+
+
+.contact{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    font-size: 1.2 rem;  
+    padding: 10px;
+    border: 1px solid black;
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;     
+}
+
+.contact p{
+    letter-spacing: 2px; 
+}

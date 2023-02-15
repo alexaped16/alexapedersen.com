@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+a{
+    color: rgb(26, 25, 25); 
+    letter-spacing: .5px; 
+    
+    &:hover{
+        color: rgb(230, 229, 229);      
+    }
+}
+
+div a{
+    font-size: 22px;
+    position: absolute;
+    padding: 3px; 
+}
