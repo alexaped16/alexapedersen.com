@@ -17,9 +17,11 @@ h3{
 .rubix-cube{
     height: auto;
     width: 100%;
-    max-width: 200px;
-    position: absolute; 
-    bottom: 0; 
+    max-width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 20%; 
+    transform: translate(-50%, -50%); 
 }
 
 @mixin backgroundImage($name){
@@ -32,17 +34,19 @@ h3{
 
 // big image as background
 .background-image-home{
-    @include backgroundImage ("spoon.jpg");
+    @include backgroundImage ("Spoon-less-pixels.jpg");
 
     height: 100vh;
     position: relative;
     background-position: 100% 10%;
-    background-size: cover;  
+    background-size: cover;
+    background-color: rgb(252, 252, 13);   
 }
 
 .vernon{
-    margin-top: 210px;
-    margin-left: 90px;  
+    margin-top: 130px;
+    margin-left: 10px;
+    color: rgb(174, 243, 89); 
 }
 
 
@@ -64,4 +68,12 @@ h3{
 
 .contact p{
     letter-spacing: 2px; 
+}
+
+.jos-in-box{
+    height: auto;
+    width: 100%;
+    max-width: 150px;
+    position: absolute;
+    bottom: 0; 
 }
