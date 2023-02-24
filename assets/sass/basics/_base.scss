@@ -2,7 +2,8 @@
 
 
 a{
-    color: rgb(26, 25, 25); 
+    color: rgb(237, 232, 232);
+    text-decoration: underline !important;  
     letter-spacing: .5px; 
     
     &:hover{
@@ -10,8 +11,3 @@ a{
     }
 }
 
-div a{
-    font-size: 22px;
-    position: absolute;
-    padding: 3px; 
-}
